@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DA51507D2BAFD2E93D88A06 /* libPods-DishIt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C499E78A839A8CBBCFDECD6 /* libPods-DishIt.a */; };
+		7922825F1BFEB427008581BD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7922825E1BFEB427008581BD /* AVFoundation.framework */; };
+		792282611C051978008581BD /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792282601C051978008581BD /* CameraManager.swift */; };
+		79B3BF781BFD346B00FCC52B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3BF771BFD346B00FCC52B /* AppDelegate.swift */; };
+		79B3BF7A1BFD346B00FCC52B /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3BF791BFD346B00FCC52B /* CaptureViewController.swift */; };
+		79B3BF7D1BFD346B00FCC52B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B3BF7B1BFD346B00FCC52B /* Main.storyboard */; };
+		79B3BF801BFD346B00FCC52B /* DishIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79B3BF7E1BFD346B00FCC52B /* DishIt.xcdatamodeld */; };
+		79B3BF821BFD346B00FCC52B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B3BF811BFD346B00FCC52B /* Assets.xcassets */; };
+		79B3BF851BFD346B00FCC52B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B3BF831BFD346B00FCC52B /* LaunchScreen.storyboard */; };
+		79B3BF901BFD346B00FCC52B /* DishItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3BF8F1BFD346B00FCC52B /* DishItTests.swift */; };
+		79B3BF9B1BFD346C00FCC52B /* DishItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3BF9A1BFD346C00FCC52B /* DishItUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79B3BF8C1BFD346B00FCC52B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79B3BF6C1BFD346B00FCC52B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79B3BF731BFD346B00FCC52B;
+			remoteInfo = DishIt;
+		};
+		79B3BF971BFD346C00FCC52B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79B3BF6C1BFD346B00FCC52B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79B3BF731BFD346B00FCC52B;
+			remoteInfo = DishIt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E9AAF47347500816C8FBD11 /* Pods-DishIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DishIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-DishIt/Pods-DishIt.release.xcconfig"; sourceTree = "<group>"; };
+		7922825E1BFEB427008581BD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		792282601C051978008581BD /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		797C75BE1BFD4359005F8B85 /* DishIt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DishIt-Bridging-Header.h"; sourceTree = "<group>"; };
+		79B3BF741BFD346B00FCC52B /* DishIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DishIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B3BF771BFD346B00FCC52B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79B3BF791BFD346B00FCC52B /* CaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		79B3BF7C1BFD346B00FCC52B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79B3BF7F1BFD346B00FCC52B /* DishIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DishIt.xcdatamodel; sourceTree = "<group>"; };
+		79B3BF811BFD346B00FCC52B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79B3BF841BFD346B00FCC52B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79B3BF861BFD346B00FCC52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79B3BF8B1BFD346B00FCC52B /* DishItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DishItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B3BF8F1BFD346B00FCC52B /* DishItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishItTests.swift; sourceTree = "<group>"; };
+		79B3BF911BFD346B00FCC52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79B3BF961BFD346C00FCC52B /* DishItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DishItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B3BF9A1BFD346C00FCC52B /* DishItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishItUITests.swift; sourceTree = "<group>"; };
+		79B3BF9C1BFD346C00FCC52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C499E78A839A8CBBCFDECD6 /* libPods-DishIt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DishIt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE051FC6772E26DAEE16D126 /* Pods-DishIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DishIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DishIt/Pods-DishIt.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79B3BF711BFD346B00FCC52B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7922825F1BFEB427008581BD /* AVFoundation.framework in Frameworks */,
+				3DA51507D2BAFD2E93D88A06 /* libPods-DishIt.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79B3BF881BFD346B00FCC52B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79B3BF931BFD346C00FCC52B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B2463A719F93218F8BC154D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7922825E1BFEB427008581BD /* AVFoundation.framework */,
+				8C499E78A839A8CBBCFDECD6 /* libPods-DishIt.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79B3BF6B1BFD346B00FCC52B = {
+			isa = PBXGroup;
+			children = (
+				79B3BF761BFD346B00FCC52B /* DishIt */,
+				79B3BF8E1BFD346B00FCC52B /* DishItTests */,
+				79B3BF991BFD346C00FCC52B /* DishItUITests */,
+				79B3BF751BFD346B00FCC52B /* Products */,
+				FFBDE25676A3F5EE5ECF6DDA /* Pods */,
+				2B2463A719F93218F8BC154D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79B3BF751BFD346B00FCC52B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79B3BF741BFD346B00FCC52B /* DishIt.app */,
+				79B3BF8B1BFD346B00FCC52B /* DishItTests.xctest */,
+				79B3BF961BFD346C00FCC52B /* DishItUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79B3BF761BFD346B00FCC52B /* DishIt */ = {
+			isa = PBXGroup;
+			children = (
+				79B3BF771BFD346B00FCC52B /* AppDelegate.swift */,
+				792282601C051978008581BD /* CameraManager.swift */,
+				79B3BF791BFD346B00FCC52B /* CaptureViewController.swift */,
+				79B3BF7B1BFD346B00FCC52B /* Main.storyboard */,
+				79B3BF811BFD346B00FCC52B /* Assets.xcassets */,
+				79B3BF831BFD346B00FCC52B /* LaunchScreen.storyboard */,
+				79B3BF861BFD346B00FCC52B /* Info.plist */,
+				79B3BF7E1BFD346B00FCC52B /* DishIt.xcdatamodeld */,
+				797C75BE1BFD4359005F8B85 /* DishIt-Bridging-Header.h */,
+			);
+			path = DishIt;
+			sourceTree = "<group>";
+		};
+		79B3BF8E1BFD346B00FCC52B /* DishItTests */ = {
+			isa = PBXGroup;
+			children = (
+				79B3BF8F1BFD346B00FCC52B /* DishItTests.swift */,
+				79B3BF911BFD346B00FCC52B /* Info.plist */,
+			);
+			path = DishItTests;
+			sourceTree = "<group>";
+		};
+		79B3BF991BFD346C00FCC52B /* DishItUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79B3BF9A1BFD346C00FCC52B /* DishItUITests.swift */,
+				79B3BF9C1BFD346C00FCC52B /* Info.plist */,
+			);
+			path = DishItUITests;
+			sourceTree = "<group>";
+		};
+		FFBDE25676A3F5EE5ECF6DDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE051FC6772E26DAEE16D126 /* Pods-DishIt.debug.xcconfig */,
+				2E9AAF47347500816C8FBD11 /* Pods-DishIt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79B3BF731BFD346B00FCC52B /* DishIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79B3BF9F1BFD346C00FCC52B /* Build configuration list for PBXNativeTarget "DishIt" */;
+			buildPhases = (
+				197A09F46AAC489946A853D9 /* Check Pods Manifest.lock */,
+				79B3BF701BFD346B00FCC52B /* Sources */,
+				79B3BF711BFD346B00FCC52B /* Frameworks */,
+				79B3BF721BFD346B00FCC52B /* Resources */,
+				DF914B625CD4366ABC60BD44 /* Embed Pods Frameworks */,
+				5EAE2DE16A85BD61CEA7CFC4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DishIt;
+			productName = DishIt;
+			productReference = 79B3BF741BFD346B00FCC52B /* DishIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79B3BF8A1BFD346B00FCC52B /* DishItTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79B3BFA21BFD346C00FCC52B /* Build configuration list for PBXNativeTarget "DishItTests" */;
+			buildPhases = (
+				79B3BF871BFD346B00FCC52B /* Sources */,
+				79B3BF881BFD346B00FCC52B /* Frameworks */,
+				79B3BF891BFD346B00FCC52B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79B3BF8D1BFD346B00FCC52B /* PBXTargetDependency */,
+			);
+			name = DishItTests;
+			productName = DishItTests;
+			productReference = 79B3BF8B1BFD346B00FCC52B /* DishItTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79B3BF951BFD346C00FCC52B /* DishItUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79B3BFA51BFD346C00FCC52B /* Build configuration list for PBXNativeTarget "DishItUITests" */;
+			buildPhases = (
+				79B3BF921BFD346C00FCC52B /* Sources */,
+				79B3BF931BFD346C00FCC52B /* Frameworks */,
+				79B3BF941BFD346C00FCC52B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79B3BF981BFD346C00FCC52B /* PBXTargetDependency */,
+			);
+			name = DishItUITests;
+			productName = DishItUITests;
+			productReference = 79B3BF961BFD346C00FCC52B /* DishItUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79B3BF6C1BFD346B00FCC52B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = NinthAndMarket;
+				TargetAttributes = {
+					79B3BF731BFD346B00FCC52B = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = JDS795SLT5;
+					};
+					79B3BF8A1BFD346B00FCC52B = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 79B3BF731BFD346B00FCC52B;
+					};
+					79B3BF951BFD346C00FCC52B = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 79B3BF731BFD346B00FCC52B;
+					};
+				};
+			};
+			buildConfigurationList = 79B3BF6F1BFD346B00FCC52B /* Build configuration list for PBXProject "DishIt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79B3BF6B1BFD346B00FCC52B;
+			productRefGroup = 79B3BF751BFD346B00FCC52B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79B3BF731BFD346B00FCC52B /* DishIt */,
+				79B3BF8A1BFD346B00FCC52B /* DishItTests */,
+				79B3BF951BFD346C00FCC52B /* DishItUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79B3BF721BFD346B00FCC52B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B3BF851BFD346B00FCC52B /* LaunchScreen.storyboard in Resources */,
+				79B3BF821BFD346B00FCC52B /* Assets.xcassets in Resources */,
+				79B3BF7D1BFD346B00FCC52B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79B3BF891BFD346B00FCC52B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79B3BF941BFD346C00FCC52B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		197A09F46AAC489946A853D9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5EAE2DE16A85BD61CEA7CFC4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DishIt/Pods-DishIt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF914B625CD4366ABC60BD44 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DishIt/Pods-DishIt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79B3BF701BFD346B00FCC52B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B3BF801BFD346B00FCC52B /* DishIt.xcdatamodeld in Sources */,
+				79B3BF7A1BFD346B00FCC52B /* CaptureViewController.swift in Sources */,
+				792282611C051978008581BD /* CameraManager.swift in Sources */,
+				79B3BF781BFD346B00FCC52B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79B3BF871BFD346B00FCC52B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B3BF901BFD346B00FCC52B /* DishItTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79B3BF921BFD346C00FCC52B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B3BF9B1BFD346C00FCC52B /* DishItUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79B3BF8D1BFD346B00FCC52B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79B3BF731BFD346B00FCC52B /* DishIt */;
+			targetProxy = 79B3BF8C1BFD346B00FCC52B /* PBXContainerItemProxy */;
+		};
+		79B3BF981BFD346C00FCC52B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79B3BF731BFD346B00FCC52B /* DishIt */;
+			targetProxy = 79B3BF971BFD346C00FCC52B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79B3BF7B1BFD346B00FCC52B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79B3BF7C1BFD346B00FCC52B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79B3BF831BFD346B00FCC52B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79B3BF841BFD346B00FCC52B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79B3BF9D1BFD346C00FCC52B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79B3BF9E1BFD346C00FCC52B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79B3BFA01BFD346C00FCC52B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE051FC6772E26DAEE16D126 /* Pods-DishIt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = DishIt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftl.DishIt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DishIt/DishIt-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		79B3BFA11BFD346C00FCC52B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E9AAF47347500816C8FBD11 /* Pods-DishIt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = DishIt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftl.DishIt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DishIt/DishIt-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		79B3BFA31BFD346C00FCC52B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DishItTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftl.DishItTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DishIt.app/DishIt";
+			};
+			name = Debug;
+		};
+		79B3BFA41BFD346C00FCC52B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DishItTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftl.DishItTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DishIt.app/DishIt";
+			};
+			name = Release;
+		};
+		79B3BFA61BFD346C00FCC52B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DishItUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftl.DishItUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DishIt;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		79B3BFA71BFD346C00FCC52B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DishItUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftl.DishItUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DishIt;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79B3BF6F1BFD346B00FCC52B /* Build configuration list for PBXProject "DishIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79B3BF9D1BFD346C00FCC52B /* Debug */,
+				79B3BF9E1BFD346C00FCC52B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79B3BF9F1BFD346C00FCC52B /* Build configuration list for PBXNativeTarget "DishIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79B3BFA01BFD346C00FCC52B /* Debug */,
+				79B3BFA11BFD346C00FCC52B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79B3BFA21BFD346C00FCC52B /* Build configuration list for PBXNativeTarget "DishItTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79B3BFA31BFD346C00FCC52B /* Debug */,
+				79B3BFA41BFD346C00FCC52B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79B3BFA51BFD346C00FCC52B /* Build configuration list for PBXNativeTarget "DishItUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79B3BFA61BFD346C00FCC52B /* Debug */,
+				79B3BFA71BFD346C00FCC52B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		79B3BF7E1BFD346B00FCC52B /* DishIt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79B3BF7F1BFD346B00FCC52B /* DishIt.xcdatamodel */,
+			);
+			currentVersion = 79B3BF7F1BFD346B00FCC52B /* DishIt.xcdatamodel */;
+			path = DishIt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 79B3BF6C1BFD346B00FCC52B /* Project object */;
+}
